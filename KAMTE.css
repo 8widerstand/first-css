@@ -1,351 +1,63 @@
-*{
+*, *::after, *::before {
+    font-family: Inter, sans-serif;
     padding: 0;
     margin: 0;
-    font-family: 'Source Code Pro', Calibri, serif;
+    box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    font-weight: bold;
-    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
-
-}
-nav{
-    width: 100%;
-    background-color: #252738;
-    border: 1px solid ;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    flex-wrap: wrap;
+body {
+    font-size: 16px;
 }
 
-nav > ul { /*ceci veut dire qu'on selectionne les éléments ul de notre menu principal.*/
-    margin: 0;
-    padding: 0;
-}
-nav > ul::after{
-    content: "";
-    display: block;
-    clear: both; /*Sans cette combinaison de 3 fonctions on pourrait pas retablir la hauteur de notre menu principal.*/
-}
-
-nav > ul > li {
-    float: left;
-    Position:relative;
-}
-nav > ul > li > a {
-    padding: 20px 30px;
-    color: #FFFFFF;
-}
-nav > ul > li:hover a {
-    padding: 15px 30px 20px 30px;
-
-}
-
-nav li { /*Ceci nous permet de cibler tous les elements "li". list-style: none; enlève les puces derrière les éléments. */
-    list-style-type: none;
-}
-
-.submenu{
-    display: none; /*Cette fonction cache par defaut les sous-onglets, derrière les onglets*/
-    transition: background 0.3s ;
-}
-/* On veut cibler les sous-onglets afin de leur cacher, car ils ne doivent qu'être visible au passage de la souris.*/
-
-nav a {
-    display: inline-block;
+li, a{
     text-decoration: none;
-    z-index: 1;
-    position: relative;
-    font-size: 1em;
+    list-style: none;
 }
 
-nav li:hover .submenu{ /*Modification du style des sous-menus (submenu), lorsque l'utilisateur passe la souris sur l'element "<li>" */
-    display: inline-block; /*Pour reafficher nos sous-menus*/
-    position: absolute;/* Pour positioner nos sous-menus en dessous de nos menus*/
+.navbar {
+    display: flex;
+    justify-content: space-between; /*line*/
+    background: rgba(255, 0, 0, 0.27);
+    padding: 0 30px;
+    height: 50px;
+}
+
+.navbar > ul {
+    display: flex;
+    align-items: center; /*column*/
+    position: relative;
+}
+.navbar > ul > li {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-inline: 10px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.sub-menu {
+    background-color: aqua;
+    position: absolute;
     top: 100%;
     left: 0;
-    padding: 0;
-    z-index: 1000;
-
-}
-
-nav > ul > li:hover a {
-    transform: scale(1.05); /* Agrandit visuellement sans déplacer les autres éléments */
-    transition: transform 0.1s ease;
-}
-
-nav > ul > li:hover .submenu{ /*Je cible tout les éléments <li> enfant de <ul qui sont eux même enfant de nav.>*/
-    display: inline-block;
-    border:1px solid rgba(117, 65, 65, 0.89);
-    border-top: none;
-    border-radius: 12px;
-    width: 280px;
-}
-
-nav li .submenu {
-    padding-top: 10px; /* Ajoute un espace cliquable invisible au-dessus du sous-menu */
-}
-
-.submenu li a { /*Afin de changer le style de nos liens en sous menu*/
-    padding: 15px 30px;
-    font-size: 14px;
-    color: #38417c;
-    width:230px;
-}
-
-.submenu li:hover a{
-    padding: 12px 10px;
-    background-color: #0070bb;
-    margin: 10px 15px;
-    border-radius: 8px;
-    transform: scale(1.05); /* Agrandit visuellement sans déplacer les autres éléments */
-    transition: transform 0.1s ease;
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size:18px;
-
-}
-
-.submenu li{
-    text-align:left;
-}
-
-nav li:hover .submenu::before {
-    content: ''; /* Ajoute un élément invisible entre le menu et les sous-menus */
-    position: absolute;
-    top: calc(100em + 100em); /* Étend la zone d'interaction au-dessus du sous-menu */
-    left: 0;
-    width: 100%;
-    height: 800em; /* La hauteur de l'espace invisible */
-    background: transparent;
-}
-
-nav span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 123px;
-    height: 60px;
-    background: linear-gradient(45deg, rgba(191, 20, 20, 0.62), #ff3333);
-    border-radius: 8px;
-
-}
-.navbar > li:nth-child(1):hover~span{
-    left: 0;
-}
-.navbar > li:nth-child(2):hover~span{
-    left: 100px;
-;
-}
-.navbar > li:nth-child(3):hover~span{
-    left: 205px;
-
-}
-.navbar > li:nth-child(4):hover~span{
-    left: 310px;
-}
-.navbar > li:nth-child(5):hover~span{
-    left: 422px;
-}
-.navbar > li:nth-child(6):hover~span{
-    left: 540px;
-}
-.navbar > li:nth-child(7):hover~span{
-    left: 648px;
-}
-.navbar > li:nth-child(8):hover~span{
-    left: 773px;
-}
-
-/*-------------------------Responsive------------------*/
-nav input[type=checkbox] {
     display: none;
+    width: 200px;
 }
-nav label {
-    display: none;
-}
-nav input[type=checkbox]:checked ~ ul{
+.navbar > ul > li:hover .sub-menu{
     display: block;
 }
-@media screen and (max-width: 780px){
-    .menu-mobile{
-        display: block;
-        color: #FFFFFF;
-        /*background-color: rgba(17, 212, 176, 0.77);*/
-        text-align: center;
-        padding: 16px 0;
-        width: 100%;
-        border: none;
-        background: linear-gradient(45deg, rgba(191, 20, 20, 0.62), #ff3333);
 
-    }
-    nav ul{
-        display: none;
-    }
-    nav ul li, nav ul li a{
-        width: 100%;
-        text-align: center;
-        background-color: rgb(255, 255, 255);
-        font-weight: bold;
-        color: #050c14;
-        transition: left 0.5s ease;
-        display: flex;
-        align-items: center;
-
-
-    }
-    nav ul li a, nav ul li:hover a{
-        padding: 10px ;
-        text-align: center;
-
-    }
-     ul {
-        flex-direction: column;
-        border: 1px solid rgba(99, 118, 198, 0.89);
-        padding: 15px 20px;
-        margin: 10px 20px;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100%;
-        display: none;
-        justify-content: center;
-        align-items: center;
-    }
-    nav span {
-        display: none
-    }
+.hover-elt{
+    width: 70px;
+    background: rgba(27, 58, 255, 0.73);
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    transition: .1s ease-in-out all;
+    border-radius: 10px;
 }
-
-
-
-/*.themen:hover{
-    border-top: 5px solid #c44d26;
-    background-color: RGBa(228,77,38,0.15);
-}
-
-.daten:hover{
-    border-top: 5px solid #0070bb ;
-    background-color:RGBa(000,112,192,0.15)
-}
-
-.events:hover{
-    border-top: 5px solid #f1dc4f ;
-    background-color:RGBa(241,211,79,0.15) ;
-}
-.presse:hover{
-    border-top: 5px solid #bbb;
-    background-color: RGBa(220,220,220,0.15);
-}
-
-.media:hover{
-    border-top: 5px solid aqua;
-    background-color: rgba(0, 255, 255, 0.25);
-}
-.bitkom:hover{
-    border-top: 5px solid chartreuse ;
-    background-color: rgba(127, 255, 0, 0.24);
-}
-.karriere:hover{
-    border-top: 5px solid darkorange ;
-    background-color: rgba(255, 140, 0, 0.32);
-}
-.mitglied:hover{
-    border-top: 5px solid rgb(174, 148, 11);
-    background-color: rgba(205, 133, 63, 0.27);
-}
-
- */
-/*.navbar li:hover {
-    transition: 0.2s ;
-}
- */
-/*.submenu li:hover a{
-    background-color: rgba(12, 187, 0, 0.77);
-    font-weight: bold;
-    border-radius: 5px;
-}
-*/
-
-/*.themen .submenu li:hover a{
-    background-color: rgba(12, 187, 0, 0.77);
-    font-weight: bold;
-    border-radius: 5px;
-}*/
-/*nav {
-    border: 1px solid #424558;
-    width: 100%;
-    padding-top: 50px;
-    margin-top: 50px;
-}
-
-
-
-nav > ul ::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-nav > ul > li > a {
-    padding: 20px 30px;
-    color: #424558;
-}
-nav ul {
-    margin: 10px;
-    padding: 10px;
-    overflow: hidden;
-}
-
-
-nav a{
-    text-decoration: none;
-    color: rgb(89, 97, 147);
-    padding: 10px;
-}
-.themen:hover{
-    background-color: rgba(66, 69, 88, 0.17);
-    border-radius: 5px;
-}
-
-.daten:hover{
-    background-color: rgba(66, 69, 88, 0.17);
-    border-radius: 5px;
-}
-.events:hover{
-    background-color: rgba(66, 69, 88, 0.17);
-    border-radius: 5px;
-}
-.presse:hover{
-    background-color: rgba(66, 69, 88, 0.17);
-    border-radius: 5px;
-}
-.media:hover{
-    background-color: rgba(66, 69, 88, 0.17);
-    border-radius:5px;
-}
-.bitkom:hover{
-    background-color: rgba(66, 69, 88, 0.17);
-    border-radius: 5px;
-}
-.karriere:hover{
-    background-color: rgba(66, 69, 88, 0.17);
-    border-radius: 5px;
-}
-.mitglied:hover{
-    background-color: rgba(66, 69, 88, 0.17);
-    border-radius: 5px;
-}
-.table{
-    display: table;
-    margin: 0 auto;
-}
-
-nav li:hover a{
-    padding: 14px ;
-    color: #0358f4;
-}*/
