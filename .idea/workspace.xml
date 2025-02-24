@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="861c54c9-38f7-4ab3-b49a-fc930aa01524" name="Changes" comment="slide">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/projekt.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WlLLY.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;wiederstand&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/wiederstand/first-css.git&quot;,
+    &quot;accountId&quot;: &quot;cf7fcd27-1b1c-4f94-bc40-3489604e6aed&quot;
+  }
+}</component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2qRbvVCOuyh76Sefy45d3ACLunR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.WlLLY.html.executor": "Run",
+    "JavaScript Debug.wps2_projektarbeit_Willy_Darcisse_Fonkou_Kamte.html.executor": "Run",
+    "Node.js.index.js.executor": "Run",
+    "Node.js.mini_projet6.js.executor": "Debug",
+    "Node.js.wps2_projektarbeit_Willy_Darcisse_Fonkou_Kamte.js.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/MSI Sword 15/Desktop/erster Project/projekt",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "C:/Users/MSI Sword 15/AppData/Roaming/JetBrains/WebStorm2024.3/node/versions/23.0.0/node",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.112" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="861c54c9-38f7-4ab3-b49a-fc930aa01524" name="Changes" comment="" />
+      <created>1734628566101</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734628566101</updated>
+      <workItem from="1734628567061" duration="58774000" />
+      <workItem from="1735199569679" duration="14000" />
+      <workItem from="1735199634342" duration="7582000" />
+      <workItem from="1735233027582" duration="19867000" />
+      <workItem from="1735295624330" duration="3000" />
+      <workItem from="1735389885537" duration="22366000" />
+      <workItem from="1735428493634" duration="13000" />
+      <workItem from="1735472892259" duration="1000" />
+      <workItem from="1735881461502" duration="34441000" />
+      <workItem from="1736023835243" duration="67877000" />
+      <workItem from="1736398546217" duration="67000" />
+      <workItem from="1736456776169" duration="19216000" />
+      <workItem from="1736553247856" duration="19965000" />
+      <workItem from="1736797643275" duration="1855000" />
+      <workItem from="1736801150176" duration="2216000" />
+      <workItem from="1736985525306" duration="36538000" />
+      <workItem from="1737649406335" duration="31000" />
+      <workItem from="1737649611170" duration="47000" />
+      <workItem from="1739040002779" duration="13789000" />
+      <workItem from="1739852128588" duration="10995000" />
+      <workItem from="1739884229215" duration="21623000" />
+      <workItem from="1739964475952" duration="10979000" />
+      <workItem from="1740428592039" duration="91000" />
+      <workItem from="1740428684156" duration="1467000" />
+    </task>
+    <task id="LOCAL-00001" summary="slide">
+      <option name="closed" value="true" />
+      <created>1736471977208</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736471977208</updated>
+    </task>
+    <task id="LOCAL-00002" summary="slide">
+      <option name="closed" value="true" />
+      <created>1736472396863</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736472396863</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="slide" />
+    <option name="LAST_COMMIT_MESSAGE" value="slide" />
+  </component>
+</project>
