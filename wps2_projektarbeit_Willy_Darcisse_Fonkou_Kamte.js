@@ -110,16 +110,38 @@ let openSubMenu = document.querySelectorAll(".main_title")
 let closeSubMenu = document.querySelectorAll(".position")
 let subMenu = document.querySelectorAll(".sub-menu")
 let Menu = document.querySelector(".nav-ul")
+let navbar = document.querySelector(".navbar")
+let closeSidebarButton = document.querySelector(".close-sidebar-button")
+let openSidebarButton = document.querySelector(".open-sidebar-button")
 
 openSubMenu.forEach((title,index) => {
     title.addEventListener("click", function (){
-        subMenu[index].classList.toggle("Active")
+        subMenu[index].classList.toggle("Active");
+        subMenu[index].style.position = "fixed";
+        subMenu[index].style.top = "-100px";
+        subMenu[index].style.left = "25px";
+        subMenu[index].style.width = "100vw";
+        subMenu[index].style.zIndex = "100000";
+        subMenu[index].style.transition = ".5";
+        closeSidebarButton.style.display = "none";
     })
 })
 
 closeSubMenu.forEach((title, index) => {
     title.addEventListener("click", function (){
-        subMenu[index].classList.remove("Active")
-
+        subMenu[index].classList.remove("Active");
+        subMenu[index].style.position = "absolute";
+        subMenu[index].style.top = "-100px";
+        subMenu[index].style.left = "25px";
+        subMenu[index].style.width = "100vw"; // Remettre la largeur par défaut
+        subMenu[index].style.zIndex = "1000";
+        subMenu[index].style.transition = ".5";
+        closeSidebarButton.style.display = "block";
     })
+})
+closeSidebarButton.addEventListener("click", function (){
+    closeSidebarButton.style.display = "none";
+})
+openSidebarButton.addEventListener("click", function (){
+    closeSidebarButton.style.display = "block";
 })
