@@ -66,45 +66,45 @@ accordions.addEventListener("click", function () {
 
 //---------------------------------------------Slide-----------------------------------------
 
-class Slider {
-    constructor(el) {
-        this.nextButton = el.querySelector("[data-slider-next]")
-        this.prevButton = el.querySelector("[data-slider-prev]")
-        this.wrapper = el.querySelector("[data-slider-wrapper]")
-        this.nextButton.addEventListener("click", () => this.move(1))
-        this.prevButton.addEventListener("click", () => this.move(-1))
-        console.log(this.pages)
-    }
+new Swiper('.card-wrapper', {
 
-    get itemsToScroll() {
-        parseInt(window.getComputedStyle(this.wrapper).getPropertyValue
-        ("--items"), 10)
-    }
+    loop: true,
 
-    get pages() {
-        return Math.ceil(this.wrapper.children.length / this.itemsToScroll)
-    }
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+    },
 
-    get page() {
-        return Math.ceil(this.wrapper.scrollLeft / this.wrapper.offsetWidth)
-    }
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 
-    move(n) {
-        let newPage = this.page + n
+    /*Responsive*/
+    breakpoints: {
+        0:{
+            slidesPerView: 1,
+        },
+        900:{
+            slidesPerView: 2,
+        },
+        1200:{
+            slidesPerView: 3,
+        }
+    },
+    timeout: 3000,
 
-        if (newPage < 0) newPage = 0
-        if (newPage >= this.pages) newPage = this.page - 1
 
-        this.wrapper.scrollTo({
-            left: this.wrapper.children[newPage * this.itemsToScroll].offsetLeft,
-            behavior: "smooth",
-        })
-    }
-}
-new Slider(document.querySelector("[data-slider]"))
+})
 
 /*-----------------------------------Responsive-----------------------------------*/
-
 
 let openSubMenu = document.querySelectorAll(".main_title")
 let closeSubMenu = document.querySelectorAll(".position")
