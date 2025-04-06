@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="861c54c9-38f7-4ab3-b49a-fc930aa01524" name="Changes" comment="slide">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wps2_projektarbeit_Willy_Darcisse_Fonkou_Kamte.css" beforeDir="false" afterPath="$PROJECT_DIR$/wps2_projektarbeit_Willy_Darcisse_Fonkou_Kamte.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wps2_projektarbeit_Willy_Darcisse_Fonkou_Kamte.html" beforeDir="false" afterPath="$PROJECT_DIR$/wps2_projektarbeit_Willy_Darcisse_Fonkou_Kamte.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wps2_projektarbeit_Willy_Darcisse_Fonkou_Kamte.js" beforeDir="false" afterPath="$PROJECT_DIR$/wps2_projektarbeit_Willy_Darcisse_Fonkou_Kamte.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +115,7 @@
       <workItem from="1742852939604" duration="1045000" />
       <workItem from="1743017194622" duration="34000" />
       <workItem from="1743638367959" duration="248000" />
-      <workItem from="1743968925061" duration="3296000" />
+      <workItem from="1743968925061" duration="4141000" />
     </task>
     <task id="LOCAL-00001" summary="slide">
       <option name="closed" value="true" />
