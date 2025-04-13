@@ -160,7 +160,6 @@ a {
     }
     .navbar {
         height: 100px;
-        width: 100%;
         background-color: var(--accent-1);
     }
     .nav-ul {
@@ -186,7 +185,6 @@ a {
         margin-left: 0;
         align-items: flex-end;
         justify-content: flex-end;
-
     }
     .hover-elt {
         display: none;
@@ -194,7 +192,6 @@ a {
     .position{
         grid-column:1 / -1 ;
         width: 100%;
-
     }
     .sub-menu{
         position: absolute;
@@ -243,7 +240,6 @@ a {
     .open-sidebar-button {
         position: relative;
         display: block;
-        align-items: flex-end;
         justify-content: center;
         color: var(--white);
         fill: var(--accent-2);
@@ -343,20 +339,33 @@ a {
 
 /*----------------Responsive2---------------------*/
 
-@media (max-width:428px ){
+@media screen and (max-width:428px ){
     .container {
         max-width: 550px;
         padding-inline: 20px;
+        width: 100%;
     }
 
     .navbar {
+        position: static;
         height: 100px;
         width: 100%;
         background-color: var(--accent-1);
-        justify-content: space-between;
     }
-    .open-sidebar-button {
-
+    .nav-ul{
+        display: block;
+        width: 100%;
+    }
+    ul .sub-menu{
+        position: absolute;
+        transform: translateX(1100px);
+        transition: .9s ;
+        height: 100vh;
+        width: 100vh;
+        top: -100px;
+    }
+    .carousel{
+        margin-top: 35px;
     }
     .rooms{
         display: flex;
@@ -389,7 +398,19 @@ a {
         width: min-content;
         height: min-content;
     }
-
+    #chart2{
+        display: block;
+        width: 310px;
+        height: 410px;
+    }
+    .themen{
+        display: block;
+        flex-wrap: wrap;
+    }
+    .color4{
+        display: block;
+        flex-wrap: wrap;
+    }
     .Angabe{
         width: 110px;
     }
@@ -426,6 +447,7 @@ a {
     .calltoaction{
         grid-column:1;
     }
+
 }
 
 /**----------- Header ---------------------**/
