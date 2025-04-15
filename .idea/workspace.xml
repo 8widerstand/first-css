@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="861c54c9-38f7-4ab3-b49a-fc930aa01524" name="Changes" comment="slide">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
@@ -63,7 +62,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/MSI Sword 15/Desktop/learning/Project/projekt1",
+    "last_opened_file_path": "C:/Users/MSI Sword 15/Desktop/Project/projekt1",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -121,7 +120,8 @@
       <workItem from="1743638367959" duration="248000" />
       <workItem from="1743968925061" duration="4141000" />
       <workItem from="1743973134662" duration="10771000" />
-      <workItem from="1744553849672" duration="5563000" />
+      <workItem from="1744553849672" duration="6320000" />
+      <workItem from="1744757974214" duration="2610000" />
     </task>
     <task id="LOCAL-00001" summary="slide">
       <option name="closed" value="true" />
